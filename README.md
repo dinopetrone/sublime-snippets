@@ -1,4 +1,6 @@
 sublime-snippets
 ================
 
-couple of sublime snippets i find myself using
+install:
+    cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/ && git clone git@github.com:dinopetrone/sublime-snippets.git
+    
