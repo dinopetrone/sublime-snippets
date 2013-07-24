@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[
+define(function (require, exports, module) {
+    var Backbone = require('backbone');
+    var ${1:Router} = Backbone.Router.extend({
+        
+        initialize: function (opts) {
+
+        },
+        routes: {
+            "": "default",
+        },
+        default: function () {
+
+        },
+    });
+
+    exports = module.exports = function (opts) {
+        return new ${1:Router}(opts);
+    };
+    exports.${1:Router} = ${1:Router};
+});
+]]></content>
+    <tabTrigger>router</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
