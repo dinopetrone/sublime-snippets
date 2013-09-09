@@ -2,10 +2,6 @@
     <content><![CDATA[
 define(function (require, exports, module) {
     
-    exports = module.exports = function (opts) {
-        return new ${1:Module}(opts);
-    };
-    exports.${1:Module} = ${1:Module};
 });
 ]]></content>
     <tabTrigger>require</tabTrigger>

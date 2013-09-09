@@ -1,20 +1,15 @@
 <snippet>
     <content><![CDATA[
 define(function (require, exports, module) {
-    var \$ = require('jquery'),
-        Marionette = require('marionette');
-        var template = require('text!../../templates/${2:template}.html');
+    var Marionette = require('marionette'),
+    template = require('text!../../templates/${1:template}.html');
 
-    var ${1:View} = Marionette.ItemView.extend({
+    return Marionette.ItemView.extend({
         template : template,
         events : {
             
         },
     });
-    exports = module.exports = function (opts) {
-        return new ${1:View}(opts);
-    };
-    exports.${1:View} = ${1:View};
 });
 ]]></content>
     <tabTrigger>itemView</tabTrigger>
