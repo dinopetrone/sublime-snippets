@@ -1,0 +1,32 @@
+<snippet>
+    <content><![CDATA[
+define(function (require, exports, module) {
+    var Marionette = require('marionette'),
+        ${2:ItemView} = require('./${2:ItemView}'),
+        template = require('tpl!../../templates/${1:template}.html');
+
+    return Marionette.CompositeView.extend({
+        template : template,
+        itemView : ${2:ItemView},
+        itemViewContainer : '#${3:item-container}',
+        initialize : function(){
+
+        },
+        ui : {
+
+        },
+        events : {
+
+        },
+        onRender : function(){
+
+        },
+
+    });
+    
+});
+]]></content>
+    <tabTrigger>compositeView</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
+

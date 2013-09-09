@@ -2,20 +2,12 @@
     <content><![CDATA[
 define(function( require, exports, module ){
     var Backbone = require('backbone'),
-        ${2:Model} = require('../models/${3:model}').${2:Model};
+        ${1:Model} = require('models/${1:Model}');
 
-    var ${1:Collection} = Backbone.Tastypie.Collection.extend({
-        ${5://}urlRoot: '${4:/api/v1/auction_item/}',
-        model: ${2:Model},
-        initialize: function(){
-
-        },
+    return Backbone.Tastypie.Collection.extend({
+        ${2://}urlRoot: '${3:/api/v1/auction_item/}',
+        model: ${1:Model}
     });
-
-    exports = module.exports = function( addModels, options ){
-        return new ${1:Collection}( addModels, options );
-    };
-    exports.${1:Collection} = ${1:Collection};
 });
 ]]></content>
     <tabTrigger>collection</tabTrigger>
