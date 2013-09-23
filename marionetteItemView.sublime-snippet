@@ -2,7 +2,7 @@
     <content><![CDATA[
 define(function (require, exports, module) {
     var Marionette = require('marionette'),
-    template = require('text!../../templates/${1:template}.html');
+    template = require('tpl!../../templates/${1:template}.html');
 
     return Marionette.ItemView.extend({
         template : template,
