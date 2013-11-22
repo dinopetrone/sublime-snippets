@@ -1,24 +1,27 @@
 <snippet>
     <content><![CDATA[
 define(function (require, exports, module) {
-    var Marionette = require('marionette'),
-        ${2:ItemView} = require('./${2:ItemView}'),
-        template = require('tpl!../../templates/${1:template}.html');
 
-    return Marionette.CompositeView.extend({
-        template : template,
-        itemView : ${2:ItemView},
-        itemViewContainer : '#${3:item-container}',
-        initialize : function(){
+var marionette = require('marionette');
+var  ${2:ItemView} = require('./${2:ItemView}').${2:ItemView};
+var template = require('hbs!tpl/${1:template}');
 
-        },
-        ui : {
+var ${3:CompositeView} =  marionette.CompositeView.extend({
+    template : template,
+    itemView : ${2:ItemView},
+    itemViewContainer : '#${3:item-container}',
+    initialize : function(){
 
-        },
-        events : {
+    },
+    ui : {
 
-        }
-    });
+    },
+    events : {
+
+    }
+});
+
+exports.${3:CompositeView} = ${3:CompositeView}
     
 });
 ]]></content>

@@ -1,21 +1,25 @@
 <snippet>
     <content><![CDATA[
 define(function (require, exports, module) {
-    var Marionette = require('marionette'),
-    template = require('tpl!../../templates/${1:template}.html');
+    
+var marionette = require('marionette');
+var template = require('hbs!tpl/${1:template}');
 
-    return Marionette.ItemView.extend({
-        template : template,
-        ui : {
-            
-        },
-        events : {
-            
-        },
-        initialize : function(){
-            
-        }
-    });
+var ${2:ItemView} = marionette.ItemView.extend({
+    template : template,
+    ui : {
+        
+    },
+    events : {
+        
+    },
+    initialize : function(){
+        ${3:}
+    }
+});
+
+exports.${2:ItemView} = ${2:ItemView};
+
 });
 ]]></content>
     <tabTrigger>itemView</tabTrigger>
