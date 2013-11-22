@@ -9,7 +9,7 @@ var template = require('hbs!tpl/${1:template}');
 var ${3:CollectionView} =  marionette.CollectionView.extend({
     template : template,
     itemView : ${2:ItemView},
-    itemViewContainer : '#${3:item-container}',
+    itemViewContainer : '#${4:item-container}',
     initialize : function(){
 
     },
@@ -21,7 +21,7 @@ var ${3:CollectionView} =  marionette.CollectionView.extend({
     }
 });
 
-exports.${3:CollectionView} = ${3:CollectionView}
+exports.${3:CollectionView} = ${3:CollectionView};
 
 });
 ]]></content>
