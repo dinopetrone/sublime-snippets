@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+define(function (require, exports, module) {
+var View = require('blitz/view').View;
+
+var ${1:MyView} =  View.extend({
+    initialize : function(){
+
+    }
+});
+
+exports.${1:MyView} = ${1:MyView};
+
+});
+]]></content>
+    <tabTrigger>famousView</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
+
