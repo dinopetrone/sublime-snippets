@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+${1:image}: {
+    content: {type: 'image', width: ${2:50}, height: ${3:50}, src: '${4:img/foo.jpg}'},
+    ${5:transform: Transform.translate(20, 120, 0)},
+    properties: {
+        ${6:color: '#fff'}
+    }
+}
+]]></content>
+    <tabTrigger>isurface</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
+
