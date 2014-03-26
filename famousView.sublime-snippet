@@ -1,7 +1,9 @@
 <snippet>
     <content><![CDATA[
-var _ = require('vendor/underscore/lodash');
-var View = require('vendor/blitz/view');
+define(function (require, exports, module) {
+
+var _ = require('underscore');
+var View = require('rich/view').View;
 
 var ${1:MyView} =  View.extend({
     initialize : function(){
@@ -9,7 +11,8 @@ var ${1:MyView} =  View.extend({
     }
 });
 
-module.exports = ${1:MyView};
+exports.${1:MyView} = ${1:MyView};
+});
 
 ]]></content>
     <tabTrigger>famousView</tabTrigger>

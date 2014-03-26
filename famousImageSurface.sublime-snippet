@@ -2,10 +2,14 @@
     <content><![CDATA[
 ${1:image}: {
     content: {type: 'image', width: ${2:50}, height: ${3:50}, src: '${4:img/foo.jpg}'},
-    ${5:transform: Transform.translate(20, 120, 0)},
     properties: {
         ${6:color: '#fff'}
-    }
+    },
+    modifier: {
+        origin:[0.5, 0, 0],
+        opacity: 0,
+        transform: Transform.translate(0, 0, 0)
+    },
 }
 ]]></content>
     <tabTrigger>isurface</tabTrigger>
