@@ -2,23 +2,17 @@
     <content><![CDATA[
 define(function (require, exports, module) {
 
-var marionette = require('marionette');
-var template = require('hbs!../templates/${1:template}');
+var ${1:marionette} = require('${1:marionette}');
+var template = require('hbs!../templates/${2:template}');
 
-var ${2:ItemView} = marionette.ItemView.extend({
+var ${3:ItemView} = ${1:marionette}.ItemView.extend({
     template : template,
-    ui : {
-
-    },
-    events : {
-
-    },
     initialize : function(){
-        ${3:}
+        ${4:}
     }
 });
 
-exports.${2:ItemView} = ${2:ItemView};
+exports.${3:ItemView} = ${3:ItemView};
 
 });
 ]]></content>
